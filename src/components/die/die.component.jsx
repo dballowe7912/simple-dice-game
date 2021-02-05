@@ -9,7 +9,7 @@ class Die extends React.Component {
         console.log(this.props)
         return (
             <div className='die'>
-                <i className={`Die fas fa-dice-${this.props.face}`}></i>
+                <i className={`Die fas fa-dice-${this.props.face} ${this.props.rolling ? 'shaking' : ''}`}></i>
             </div>
         )
     }
